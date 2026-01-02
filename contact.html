@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - TravelPro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-globe"></i> TravelPro
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-small">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Contactez-Nous</h1>
+            <p>Nous sommes ici pour vous aider</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info" data-aos="fade-right">
+                    <h2>Informations de Contact</h2>
+                    <p>N'hésitez pas à nous contacter. Nous sommes toujours heureux de vous aider.</p>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Adresse</h4>
+                            <p>123 Rue de Paris<br>75000 Paris, France</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Téléphone</h4>
+                            <p>+33 1 23 45 67 89<br>+33 1 98 76 54 32</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>info@travelpro.com<br>support@travelpro.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Heures d'Ouverture</h4>
+                            <p>Lun - Ven: 9:00 - 18:00<br>Sam - Dim: 10:00 - 16:00</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4 style="margin-bottom: 15px;">Suivez-Nous</h4>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form" data-aos="fade-left">
+                    <h2>Envoyez-Nous un Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom Complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Envoyer le Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-down">
+                <h2>Questions Fréquentes</h2>
+                <p>Trouvez les réponses à vos questions</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h4>Quel est le meilleur moment pour voyager?</h4>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Le meilleur moment dépend de votre destination. Nous recommandons de voyager pendant les saisons sèches pour la plupart des destinations tropicales. Contactez-nous pour des recommandations personnalisées.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h4>Avez-vous des offres pour les familles?</h4>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui! Nous proposons des forfaits spéciaux famille avec des activités adaptées aux enfants et des réductions de groupe. Consultez notre page services pour plus de détails.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h4>Puis-je annuler ma réservation?</h4>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, vous pouvez annuler jusqu'à 30 jours avant votre voyage pour un remboursement complet. Des conditions spéciales s'appliquent pour certaines périodes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h4>Est-ce que l'assurance voyage est incluse?</h4>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>L'assurance voyage est incluse dans nos forfaits Standard et Premium. Pour le forfait Basique, elle peut être ajoutée moyennant un supplément.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h4>Quel est le délai pour obtenir un visa?</h4>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Le délai dépend du pays. En général, nous recommandons de faire une demande 2-3 mois avant votre voyage. Notre équipe vous accompagnera dans cette démarche.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h4>Proposez-vous des voyages en groupe?</h4>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolument! Nous proposons des tarifs de groupe avantageux pour les groupes de 10 personnes ou plus. Contactez-nous pour obtenir un devis personnalisé.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section" data-aos="fade-up">
+                    <h4>TravelPro</h4>
+                    <p>Votre partenaire de confiance pour tous vos voyages autour du monde.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Hôtels</a></li>
+                        <li><a href="#">Vols</a></li>
+                        <li><a href="#">Tours Guidés</a></li>
+                        <li><a href="#">Assurance Voyage</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="300">
+                    <h4>Contact</h4>
+                    <p>Email: info@travelpro.com</p>
+                    <p>Téléphone: +33 1 23 45 67 89</p>
+                    <p>Adresse: 123 Rue de Paris, 75000 Paris</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 TravelPro. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

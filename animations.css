@@ -1,0 +1,400 @@
+/* ================================
+   CUSTOM AOS ANIMATIONS
+   ================================ */
+
+/* Slideshow Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(52, 152, 219, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(52, 152, 219, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(52, 152, 219, 0);
+    }
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Glow Animation */
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(52, 152, 219, 1);
+    }
+}
+
+/* Rotate Animation */
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Scale Animation */
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Fade and Slide Animation */
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover Animations for Cards */
+.destination-card:hover,
+.service-card:hover,
+.feature-box:hover {
+    animation: scaleUp 0.3s ease;
+}
+
+/* Button Hover Animation */
+.btn:hover {
+    animation: pulse 0.6s;
+}
+
+/* Icon Spin on Hover */
+.feature-icon:hover {
+    animation: rotate360 1s linear;
+}
+
+/* Smooth Transitions for Interactive Elements */
+button, a, input, textarea {
+    transition: var(--transition);
+}
+
+/* Smooth Color Transitions */
+.nav-menu a, .btn-link {
+    transition: color var(--transition);
+}
+
+/* AOS Custom Configs */
+[data-aos] {
+    opacity: 0;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+/* Additional Fade Variations */
+[data-aos="fade-up-big"] {
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+[data-aos="fade-up-big"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Smooth Loading Animation */
+@keyframes loading {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.loading {
+    animation: loading 1.5s infinite;
+}
+
+/* Smooth Page Transition */
+body {
+    animation: fadeSlideUp 0.6s ease;
+}
+
+/* Navbar Animation on Scroll */
+.navbar {
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Card Reveal Animation */
+.destination-card,
+.service-card,
+.feature-box {
+    opacity: 0;
+    animation: fadeSlideUp 0.6s ease forwards;
+}
+
+/* Stagger Animation for Multiple Elements */
+.destinations-grid > *:nth-child(1) { animation-delay: 0.1s; }
+.destinations-grid > *:nth-child(2) { animation-delay: 0.2s; }
+.destinations-grid > *:nth-child(3) { animation-delay: 0.3s; }
+.destinations-grid > *:nth-child(4) { animation-delay: 0.4s; }
+.destinations-grid > *:nth-child(5) { animation-delay: 0.5s; }
+.destinations-grid > *:nth-child(6) { animation-delay: 0.6s; }
+
+/* Form Input Focus Animation */
+input:focus, textarea:focus {
+    animation: glow 0.6s ease;
+}
+
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Light Box Effect on Hover */
+.card-image-full:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    animation: pulse 0.6s ease;
+}
+
+/* Enhanced Button Animations */
+.btn-primary, .btn-secondary {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::before, .btn-secondary::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.btn-primary:hover::before, .btn-secondary:hover::before {
+    animation: expandRipple 0.6s ease-out;
+}
+
+@keyframes expandRipple {
+    to {
+        width: 300px;
+        height: 300px;
+        opacity: 0;
+    }
+}
+
+/* Notification Animations (from script.js) */
+@keyframes slideInNotification {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Smooth List Item Animations */
+.service-features li {
+    animation: fadeSlideUp 0.5s ease;
+}
+
+.service-features li:nth-child(1) { animation-delay: 0.1s; }
+.service-features li:nth-child(2) { animation-delay: 0.2s; }
+.service-features li:nth-child(3) { animation-delay: 0.3s; }
+
+/* Enhance Filter Button Animation */
+.filter-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.filter-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.filter-btn:active::after {
+    width: 200px;
+    height: 200px;
+}
+
+/* Smooth Modal/Overlay Animations */
+@keyframes overlayFadeIn {
+    from {
+        opacity: 0;
+        backdrop-filter: blur(0px);
+    }
+    to {
+        opacity: 1;
+        backdrop-filter: blur(5px);
+    }
+}
+
+/* Icon Animation */
+.feature-icon, .mission-icon, .info-icon {
+    transition: all 0.3s ease;
+}
+
+.feature-box:hover .feature-icon,
+.mission-card:hover .mission-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Text Animation */
+h1, h2, h3, h4 {
+    animation: fadeSlideUp 0.6s ease;
+}
+
+/* Underline Animation */
+.btn-link {
+    position: relative;
+    text-decoration: none;
+}
+
+.btn-link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--secondary-color);
+    transition: width 0.3s ease;
+}
+
+.btn-link:hover::after {
+    width: 100%;
+}
+
+/* Smooth Tooltip Animation */
+.tooltip {
+    animation: fadeSlideUp 0.3s ease;
+}
+
+/* Enhanced Hover Effects */
+.social-links a:hover {
+    animation: bounce 0.6s ease;
+}
+
+/* Mobile Menu Animation */
+.nav-menu.active {
+    animation: slideDown 0.3s ease;
+}
+
+/* Price Tag Animation */
+.price {
+    animation: scaleUp 0.3s ease;
+}
+
+/* Star Rating Animation */
+.stars {
+    animation: glow 0.6s ease infinite;
+}
+
+/* Team Member Hover Animation */
+.team-member:hover .member-image {
+    animation: rotate360 2s linear infinite;
+}
+
+/* FAQ Toggle Animation */
+.faq-item.active .faq-answer {
+    animation: slideDown 0.3s ease;
+}
+
+/* Smooth Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-color);
+}
+
+/* Selection Color */
+::selection {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+::-moz-selection {
+    background: var(--secondary-color);
+    color: var(--white);
+}

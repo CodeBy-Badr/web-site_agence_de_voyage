@@ -1,0 +1,71 @@
+{
+  "site": {
+    "name": "TravelPro",
+    "description": "Agence de voyage professionnelle avec services haut de gamme",
+    "version": "1.0.0",
+    "author": "Web Development Team",
+    "year": 2024
+  },
+  
+  "contact": {
+    "email": "info@travelpro.com",
+    "supportEmail": "support@travelpro.com",
+    "phone": "+33 1 23 45 67 89",
+    "phone2": "+33 1 98 76 54 32",
+    "address": "123 Rue de Paris, 75000 Paris, France"
+  },
+  
+  "social": {
+    "facebook": "https://facebook.com/travelpro",
+    "twitter": "https://twitter.com/travelpro",
+    "instagram": "https://instagram.com/travelpro",
+    "linkedin": "https://linkedin.com/company/travelpro"
+  },
+  
+  "colors": {
+    "primary": "#2c3e50",
+    "secondary": "#3498db",
+    "accent": "#e74c3c",
+    "dark": "#1a1a1a",
+    "light": "#ecf0f1",
+    "gray": "#95a5a6",
+    "success": "#27ae60",
+    "white": "#ffffff"
+  },
+  
+  "animations": {
+    "aosDuration": 1000,
+    "aosOffset": 100,
+    "transitionSpeed": "0.3s"
+  },
+  
+  "seo": {
+    "title": "TravelPro - Agence de Voyage Professionnelle",
+    "description": "Des voyages extraordinaires, des souvenirs inoubliables. Découvrez nos meilleures destinations et services",
+    "keywords": "agence voyage, destinations, tours, voyage pas cher",
+    "ogImage": "/images/og-image.jpg"
+  },
+  
+  "business": {
+    "businessHours": {
+      "weekday": "9:00 - 18:00",
+      "weekend": "10:00 - 16:00"
+    },
+    "currency": "EUR",
+    "languages": ["French", "English", "Spanish"]
+  },
+  
+  "features": {
+    "enableChat": false,
+    "enableBlog": false,
+    "enableBooking": false,
+    "enableNewsletter": false
+  },
+  
+  "integrations": {
+    "googleAnalytics": "G-XXXXXXXXXX",
+    "formspree": "https://formspree.io/f/ID",
+    "stripe": "pk_live_xxx",
+    "netlify": true
+  }
+}

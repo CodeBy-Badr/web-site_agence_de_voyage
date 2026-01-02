@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - TravelPro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-globe"></i> TravelPro
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="destinations.html" class="active">Destinations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-small">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Nos Destinations</h1>
+            <p>Explorez les plus beaux endroits du monde</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons" data-aos="fade-down">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="europe">Europe</button>
+                <button class="filter-btn" data-filter="asia">Asie</button>
+                <button class="filter-btn" data-filter="africa">Afrique</button>
+                <button class="filter-btn" data-filter="america">Amérique</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="destinations-full">
+        <div class="container">
+            <div class="destinations-full-grid">
+                <!-- France -->
+                <div class="destination-full-card" data-filter="europe" data-aos="fade-up">
+                    <div class="card-image-full" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="card-content-full">
+                        <h3>France</h3>
+                        <div class="card-meta">
+                            <span><i class="fas fa-star"></i> 4.8/5</span>
+                            <span><i class="fas fa-users"></i> 2.5K+</span>
+                        </div>
+                        <p>Découvrez la magie de Paris, la Provence et la Côte d'Azur. Une destination incontournable.</p>
+                        <div class="price">À partir de 890€</div>
+                        <a href="#" class="btn-details">Voir Détails →</a>
+                    </div>
+                </div>
+
+                <!-- Japon -->
+                <div class="destination-full-card" data-filter="asia" data-aos="fade-up">
+                    <div class="card-image-full" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="card-content-full">
+                        <h3>Japon</h3>
+                        <div class="card-meta">
+                            <span><i class="fas fa-star"></i> 4.9/5</span>
+                            <span><i class="fas fa-users"></i> 3.1K+</span>
+                        </div>
+                        <p>Temples anciens, villes ultra-modernes et paysages spectaculaires vous attendent.</p>
+                        <div class="price">À partir de 1,290€</div>
+                        <a href="#" class="btn-details">Voir Détails →</a>
+                    </div>
+                </div>
+
+                <!-- Égypte -->
+                <div class="destination-full-card" data-filter="africa" data-aos="fade-up">
+                    <div class="card-image-full" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="card-content-full">
+                        <h3>Égypte</h3>
+                        <div class="card-meta">
+                            <span><i class="fas fa-star"></i> 4.7/5</span>
+                            <span><i class="fas fa-users"></i> 1.8K+</span>
+                        </div>
+                        <p>Pyramides, Nil et richesses antiques. Une aventure historique inoubliable vous attend.</p>
+                        <div class="price">À partir de 780€</div>
+                        <a href="#" class="btn-details">Voir Détails →</a>
+                    </div>
+                </div>
+
+                <!-- États-Unis -->
+                <div class="destination-full-card" data-filter="america" data-aos="fade-up">
+                    <div class="card-image-full" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"></div>
+                    <div class="card-content-full">
+                        <h3>États-Unis</h3>
+                        <div class="card-meta">
+                            <span><i class="fas fa-star"></i> 4.8/5</span>
+                            <span><i class="fas fa-users"></i> 4.2K+</span>
+                        </div>
+                        <p>De New York à la Californie, explorez la diversité américaine en un seul voyage.</p>
+                        <div class="price">À partir de 1,190€</div>
+                        <a href="#" class="btn-details">Voir Détails →</a>
+                    </div>
+                </div>
+
+                <!-- Italie -->
+                <div class="destination-full-card" data-filter="europe" data-aos="fade-up">
+                    <div class="card-image-full" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    <div class="card-content-full">
+                        <h3>Italie</h3>
+                        <div class="card-meta">
+                            <span><i class="fas fa-star"></i> 4.9/5</span>
+                            <span><i class="fas fa-users"></i> 3.5K+</span>
+                        </div>
+                        <p>Rome, Venise, Florence... L'art, la gastronomie et l'histoire italienne</p>
+                        <div class="price">À partir de 950€</div>
+                        <a href="#" class="btn-details">Voir Détails →</a>
+                    </div>
+                </div>
+
+                <!-- Thaïlande -->
+                <div class="destination-full-card" data-filter="asia" data-aos="fade-up">
+                    <div class="card-image-full" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"></div>
+                    <div class="card-content-full">
+                        <h3>Thaïlande</h3>
+                        <div class="card-meta">
+                            <span><i class="fas fa-star"></i> 4.8/5</span>
+                            <span><i class="fas fa-users"></i> 2.9K+</span>
+                        </div>
+                        <p>Plages paradisiaques, temples bouddhistes et saveurs exotiques vous séduiront.</p>
+                        <div class="price">À partir de 650€</div>
+                        <a href="#" class="btn-details">Voir Détails →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section" data-aos="fade-up">
+                    <h4>TravelPro</h4>
+                    <p>Votre partenaire de confiance pour tous vos voyages autour du monde.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Hôtels</a></li>
+                        <li><a href="#">Vols</a></li>
+                        <li><a href="#">Tours Guidés</a></li>
+                        <li><a href="#">Assurance Voyage</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="300">
+                    <h4>Contact</h4>
+                    <p>Email: info@travelpro.com</p>
+                    <p>Téléphone: +33 1 23 45 67 89</p>
+                    <p>Adresse: 123 Rue de Paris, 75000 Paris</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 TravelPro. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
